@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reach Us</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:#f8fafc;
+}
+
+/* HEADER */
+.header{
+background:#0f172a;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+.header h1{
+font-size:36px;
+}
+
+.header p{
+opacity:0.7;
+margin-top:10px;
+}
+
+/* INFO SECTION */
+.info{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:30px;
+flex-wrap:wrap;
+}
+
+.info-card{
+background:white;
+padding:20px;
+border-radius:10px;
+width:250px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-card h3{
+margin-bottom:10px;
+}
+
+/* MAIN CONTACT AREA */
+.main{
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap:30px;
+padding:40px;
+width:90%;
+margin:auto;
+}
+
+/* MAP BOX */
+.map{
+background:#ddd;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+color:#555;
+}
+
+/* FORM */
+.form-box{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-box h2{
+margin-bottom:15px;
+}
+
+.form-box input,
+.form-box textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+.form-box button{
+margin-top:15px;
+width:100%;
+padding:12px;
+background:#0f172a;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#0f172a;
+color:white;
+margin-top:30px;
+}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+.main{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Contact & Support</h1>
+    <p>We are here to help you anytime</p>
+</div>
+
+<!-- INFO CARDS -->
+<div class="info">
+    <div class="info-card">
+        <h3>📞 Phone</h3>
+        <p>+91 98765 43210</p>
+    </div>
+    <div class="info-card">
+        <h3>📧 Email</h3>
+        <p>support@store.com</p>
+    </div>
+    <div class="info-card">
+        <h3>📍 Location</h3>
+        <p>Kochi, India</p>
+    </div>
+</div>
+
+<!-- MAIN SECTION -->
+<div class="main">
+
+    <!-- MAP -->
+    <div class="map">
+        🗺️ Map Placeholder
+    </div>
+
+    <!-- FORM -->
+    <div class="form-box">
+        <h2>Send a Message</h2>
+
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button>Submit</button>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Contact System | All Rights Reserved
+</footer>
+
+</body>
+</html>

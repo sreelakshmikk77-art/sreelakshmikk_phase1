@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creator Hub</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: white;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+}
+
+/* ROW LAYOUT */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* COLUMN BOX */
+.box {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* POSTS */
+.post {
+    display: block;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+/* TAGS */
+.tag {
+    display: inline-block;
+    background: #00e5ff;
+    color: black;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* USERS */
+.user-card {
+    display: inline-block;
+    width: 130px;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ff6a00, #ee0979);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.user-card:hover {
+    transform: scale(1.08);
+}
+
+/* IMAGE */
+.image-box img {
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    margin-top: 20px;
+    object-fit: cover;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">🚀 Creator Hub</div>
+
+<div class="row">
+
+    <!-- POSTS -->
+    <div class="box">
+        <h2>🔥 Posts</h2>
+
+        <div class="post">
+            <h3>Viral Reel Idea 💡</h3>
+            <p>Short cinematic edits are dominating Instagram.</p>
+        </div>
+
+        <div class="post">
+            <h3>Editing Trick 🎬</h3>
+            <p>Use speed ramp + sound sync for insane transitions.</p>
+        </div>
+    </div>
+
+    <!-- TAGS -->
+    <div class="box">
+        <h2>⚡ Tags</h2>
+
+        <span class="tag">#viral</span>
+        <span class="tag">#reels</span>
+        <span class="tag">#editing</span>
+        <span class="tag">#cinematic</span>
+    </div>
+
+    <!-- USERS -->
+    <div class="box">
+        <h2>⭐ Creators</h2>
+
+        <div class="user-card">Shain</div>
+        <div class="user-card">Alex</div>
+        <div class="user-card">Riya</div>
+        <div class="user-card">Liya</div>
+    </div>
+
+</div>
+
+<!-- IMAGE BOTTOM -->
+<div class="image-box" style="text-align:center;">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journey Timeline</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* TITLE */
+.title{
+text-align:center;
+padding:30px;
+}
+
+.title h1{
+font-size:32px;
+}
+
+/* TIMELINE */
+.timeline{
+position:relative;
+max-width:900px;
+margin:40px auto;
+}
+
+/* LINE */
+.timeline::after{
+content:'';
+position:absolute;
+width:4px;
+background:#38bdf8;
+top:0;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+}
+
+/* ITEM */
+.item{
+padding:20px;
+position:relative;
+width:50%;
+}
+
+.item img{
+width:100%;
+border-radius:10px;
+}
+
+/* LEFT */
+.left{
+left:0;
+text-align:right;
+}
+
+/* RIGHT */
+.right{
+left:50%;
+}
+
+/* CONTENT */
+.content{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+margin-top:10px;
+}
+
+/* DOT */
+.item::before{
+content:'';
+position:absolute;
+width:15px;
+height:15px;
+background:#38bdf8;
+border-radius:50%;
+top:30px;
+right:-8px;
+}
+
+.right::before{
+left:-8px;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+.timeline::after{
+left:20px;
+}
+
+.item{
+width:100%;
+padding-left:40px;
+}
+
+.right{
+left:0;
+}
+
+.item::before{
+left:10px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">
+    <h1>🌍 Travel Journey</h1>
+</div>
+
+<div class="timeline">
+
+    <div class="item left">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600">
+        <div class="content">
+            <h3>Maldives</h3>
+            <p>Crystal clear waters and peaceful islands.</p>
+        </div>
+    </div>
+
+    <div class="item right">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600">
+        <div class="content">
+            <h3>Paris</h3>
+            <p>The city of lights and romance.</p>
+        </div>
+    </div>
+
+    <div class="item left">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=600">
+        <div class="content">
+            <h3>Dubai</h3>
+            <p>Luxury, skyscrapers and desert adventures.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
