@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gaming Hub</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #020617;
+    padding: 12px;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ffff;
+}
+
+/* SECTION */
+section {
+    padding: 30px;
+}
+
+/* HORIZONTAL SCROLL */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #00ffff;
+    border-radius: 10px;
+}
+
+/* CARD */
+.card {
+    min-width: 260px;
+    background: #020617;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,255,255,0.2);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,255,255,0.2);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0,255,255,0.6);
+}
+
+/* Header colors */
+.card:nth-child(1) .card-header { background: #ff0080; }
+.card:nth-child(2) .card-header { background: #00ffff; color:black; }
+.card:nth-child(3) .card-header { background: #7c3aed; }
+.card:nth-child(4) .card-header { background: #22c55e; }
+
+.card-header {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 15px;
+    color: #cbd5f5;
+    flex: 1;
+    font-size: 14px;
+}
+
+.card-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-footer button {
+    background: transparent;
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    padding: 10px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.card-footer button:hover {
+    background: #00ffff;
+    color: black;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+    color: #94a3b8;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    🎮 Gaming Control Center
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Games</a>
+    <a href="#">Leaderboard</a>
+    <a href="#">Settings</a>
+</nav>
+
+<section>
+
+<h2>🔥 Featured Modes</h2>
+
+<div class="scroll-container">
+
+    <div class="card">
+        <div class="card-header">🔥 Battle Arena</div>
+        <div class="card-body">Join real-time battles and compete globally.</div>
+        <div class="card-footer"><button>Play</button></div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">🏆 Leaderboard</div>
+        <div class="card-body">Check rankings worldwide.</div>
+        <div class="card-footer"><button>View</button></div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">⚡ Boost Mode</div>
+        <div class="card-body">Activate speed boost.</div>
+        <div class="card-footer"><button>Activate</button></div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">🛡️ Defense Shield</div>
+        <div class="card-body">Protect your base.</div>
+        <div class="card-footer"><button>Enable</button></div>
+    </div>
+
+</div>
+
+</section>
+
+<footer>
+    © 2026 Gaming Hub UI
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Travel Explorer</title>
+
+<style>
+
+/* HEADER */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* PAGE TITLE */
+.section-title{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 34px;
+    color: #444;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* GRID CONTAINER */
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* CARD */
+.laptop-card{
+    position: relative;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    background: white;
+    transition: 0.4s;
+}
+
+.laptop-card:hover{
+    transform: translateY(-10px);
+}
+
+/* IMAGE */
+.laptop-card img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* BADGE */
+.tag{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #00b894;
+    color: white;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+/* TITLE */
+.laptop-title{
+    font-size: 24px;
+    color: #ff7e5f;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* DESCRIPTION */
+.laptop-desc{
+    font-size: 15px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* FOOTER OFFER */
+.footer-offer{
+    margin: 40px auto;
+    width: fit-content;
+    background: #ff7e5f;
+    color: white;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    🌍 Travel Explorer
+</header>
+
+<h2 class="section-title">Top Destinations</h2>
+
+<div class="container">
+
+    <!-- CARD 1 -->
+    <div class="laptop-card">
+        <div class="tag">POPULAR</div>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <div class="laptop-title">Maldives Beach</div>
+        <p class="laptop-desc">Crystal clear water and luxury island experience.</p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="laptop-card">
+        <div class="tag">TRENDING</div>
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <div class="laptop-title">Swiss Alps</div>
+        <p class="laptop-desc">Snowy mountains and breathtaking scenic views.</p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="laptop-card">
+        <div class="tag">NEW</div>
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98">
+        <div class="laptop-title">Dubai City</div>
+        <p class="laptop-desc">Luxury lifestyle with modern architecture.</p>
+    </div>
+
+</div>
+
+<div class="footer-offer">
+    ✈️ Book Now & Get 50% Off!
+</div>
+
+</body>
+</html>

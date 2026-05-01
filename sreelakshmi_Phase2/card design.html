@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Gadgets Store</title>
+
+<style>
+
+/* KEEP YOUR SAME CSS ABOVE */
+/* ADD BELOW ONLY */
+
+body {
+    margin: 0;
+}
+
+/* TOP BAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    padding: 15px 25px;
+    color: white;
+}
+
+/* CATEGORY FILTER */
+.filters {
+    display: flex;
+    gap: 15px;
+}
+
+.filters button {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: white;
+    color: black;
+}
+
+/* MAIN */
+.main {
+    padding: 20px;
+}
+
+/* GRID ALIGN */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <h2>⚡ Tech Gadgets</h2>
+
+    <div class="filters">
+        <button>All</button>
+        <button>Audio</button>
+        <button>Wearables</button>
+        <button>Gaming</button>
+        <button>Accessories</button>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<div class="container">
+
+    <div class="card">
+        <div class="badge">NEW</div>
+        <img src="https://i.pravatar.cc/300?img=10">
+        <div class="content">
+            <h2>Wireless Earbuds</h2>
+            <p>Crystal clear sound & deep bass</p>
+            <div class="price">₹1999</div>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="badge">SALE</div>
+        <img src="https://i.pravatar.cc/300?img=12">
+        <div class="content">
+            <h2>Smart Watch</h2>
+            <p>Track fitness & notifications</p>
+            <div class="price">₹2999</div>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pravatar.cc/300?img=15">
+        <div class="content">
+            <h2>Gaming Mouse</h2>
+            <p>High precision & RGB lighting</p>
+            <div class="price">₹1499</div>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="badge">HOT</div>
+        <img src="https://i.pravatar.cc/300?img=18">
+        <div class="content">
+            <h2>Bluetooth Speaker</h2>
+            <p>Loud sound with deep bass</p>
+            <div class="price">₹1799</div>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
